@@ -1,32 +1,43 @@
 import Link from "next/link";
-import { Home, Search, Mountain } from "lucide-react";
+import Image from "next/image";
+import { Home, Search } from "lucide-react";
 import styles from "./not-found.module.css";
 
 export const metadata = {
-    title: "404 - Pagina Non Trovata | Mountain & Fauna Lover",
-    description: "La pagina che stai cercando non esiste. Torna alla homepage o esplora i nostri contenuti.",
+    title: "404 - Cervo Non Trovato | Mountain & Fauna Lover",
+    description: "Ops! Sembra che il cervo sia scappato. Pagina non trovata.",
 };
 
 export default function NotFound() {
     return (
         <main className={styles.container}>
             <div className={styles.content}>
-                <Mountain size={80} className={styles.icon} />
+                <div className={styles.imageWrapper}>
+                    <Image
+                        src="/images/branding/deer-silhouette.png"
+                        alt="Silhouette di un cervo maschio maestoso"
+                        width={400}
+                        height={400}
+                        className={styles.deerImage}
+                        priority
+                    />
+                </div>
                 <h1 className={styles.title}>404</h1>
-                <h2 className={styles.subtitle}>Sentiero Non Trovato</h2>
+                <h2 className={styles.subtitle}>Ops! Il Cervo è Scappato...</h2>
                 <p className={styles.description}>
-                    Ops! Sembra che tu abbia preso il sentiero sbagliato.
-                    La pagina che cerchi non esiste o è stata spostata.
+                    Sembra che tu abbia perso il sentiero (o forse il cervo si è nascosto troppo bene!).
+                    <br />
+                    Non preoccuparti, anche i migliori esploratori si perdono ogni tanto.
                 </p>
 
                 <div className={styles.actions}>
                     <Link href="/" className={styles.button}>
                         <Home size={20} />
-                        Torna alla Home
+                        Torna al Campo Base
                     </Link>
                     <Link href="/blog" className={styles.button}>
                         <Search size={20} />
-                        Esplora il Blog
+                        Cerca Altre Tracce
                     </Link>
                 </div>
             </div>

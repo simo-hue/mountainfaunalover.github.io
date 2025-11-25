@@ -22,18 +22,43 @@
     text-align: center;
 }
 
-.date {
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.separator {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.category {
     color: var(--color-accent-green);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    display: block;
+    font-weight: 600;
 }
 
 .title {
     font-size: 3rem;
     line-height: 1.2;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--color-foreground);
+}
+
+.excerpt {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.author {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.95rem;
 }
 
 .imageContainer {
@@ -57,4 +82,70 @@
 
 .content p {
     margin-bottom: 1.5rem;
+}
+
+.shareSection {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.shareTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.shareButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shareButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.shareButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-accent-green);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .excerpt {
+        font-size: 1.1rem;
+    }
+
+    .meta {
+        font-size: 0.85rem;
+    }
+
+    .shareButtons {
+        flex-direction: column;
+    }
+
+    .shareButton {
+        width: 100%;
+        justify-content: center;
+    }
 }

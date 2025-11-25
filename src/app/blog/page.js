@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { posts } from "@/data/posts";
 import styles from "./page.module.css";
@@ -12,10 +12,16 @@ const CATEGORIES = ["Tutti", "Fauna", "Trekking", "Tech & Gear", "Offroad"];
 
 export default function BlogPage() {
     const [activeCategory, setActiveCategory] = useState("Tutti");
+    const [searchQuery, setSearchQuery] = useState("");
 
-    const filteredPosts = activeCategory === "Tutti"
-        ? posts
-        : posts.filter(post => post.category === activeCategory);
+    const filteredPosts = posts.filter(post => {
+        const matchesCategory = activeCategory === "Tutti" || post.category === activeCategory;
+        const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            post.content.toLowerCase().includes(searchQuery.toLowerCase());
+
+        return matchesCategory && matchesSearch;
+    });
 
     return (
         <main className={styles.container}>
@@ -23,6 +29,17 @@ export default function BlogPage() {
                 <h1 className={styles.title}>Il Diario dell'Esploratore</h1>
                 <p className={styles.subtitle}>Racconti, guide e momenti indimenticabili dalla natura selvaggia.</p>
             </header>
+
+            <div className={styles.searchContainer}>
+                <Search className={styles.searchIcon} size={20} />
+                <input
+                    type="text"
+                    placeholder="Cerca nel diario..."
+                    className={styles.searchInput}
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                />
+            </div>
 
             <div className={styles.filterBar}>
                 {CATEGORIES.map((category) => (

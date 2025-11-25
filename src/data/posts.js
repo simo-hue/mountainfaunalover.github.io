@@ -27,7 +27,7 @@ export const posts = [
         content: "Per fotografare gli animali in montagna serve pazienza, ma anche l'attrezzatura giusta..."
     },
     {
-        slug: "attrezzatura-fotografica-montagna",
+        slug: "swarovski-nl-pure-lancio",
         title: "Seguire il lancio di un nuovo prodotto Swarovski Optik",
         excerpt: "Swarovski Optik NL PURE 14x52",
         date: "2024-09-10",
@@ -36,7 +36,7 @@ export const posts = [
         content: "Per fotografare gli animali in montagna serve pazienza, ma anche l'attrezzatura giusta..."
     },
     {
-        slug: "Con i Militari A Fare Off-Road",
+        slug: "con-i-militari-a-fare-offroad",
         title: "Nel campo militare con i Defender...",
         excerpt: "Test come si deve per il Land Rover Defender 90 HSE.",
         date: "2024-01-15",

@@ -5,39 +5,68 @@
     justify-content: center;
     padding: 2rem;
     text-align: center;
+    background: radial-gradient(circle at center, rgba(20, 30, 20, 0.8) 0%, rgba(10, 10, 10, 1) 100%);
 }
 
 .content {
-    max-width: 600px;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
 }
 
-.icon {
-    color: var(--color-accent-green);
+.imageWrapper {
     margin-bottom: 2rem;
-    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+    animation: float 6s ease-in-out infinite;
+}
+
+.deerImage {
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .title {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     background: linear-gradient(to right, var(--color-accent-green), var(--color-accent-blue));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 1;
 }
 
 .subtitle {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     color: white;
+    font-weight: 700;
 }
 
 .description {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 3rem;
-    line-height: 1.7;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .actions {
