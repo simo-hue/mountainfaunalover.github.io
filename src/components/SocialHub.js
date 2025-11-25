@@ -15,11 +15,11 @@ const SOCIAL_CONTENT = [
     },
     {
         id: 2,
-        platform: "instagram",
-        title: "Tramonto sulle Dolomiti",
-        image: "/hero-bg.png",
-        views: "2.5k likes",
-        link: "https://instagram.com"
+        platform: "youtube",
+        title: "Defender 90: Offroad al Limite",
+        image: "https://img.youtube.com/vi/wQrx2422wD8/maxresdefault.jpg",
+        views: "Nuovo Video",
+        link: "https://youtu.be/wQrx2422wD8"
     },
     {
         id: 3,

@@ -6,32 +6,41 @@ import html from 'remark-html';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 
+function getFilesRecursively(dir) {
+    let results = [];
+    const list = fs.readdirSync(dir);
+    list.forEach(function (file) {
+        const filePath = path.join(dir, file);
+        const stat = fs.statSync(filePath);
+        if (stat && stat.isDirectory()) {
+            results = results.concat(getFilesRecursively(filePath));
+        } else {
+            if (filePath.endsWith('.md') && !file.startsWith('_')) {
+                results.push(filePath);
+            }
+        }
+    });
+    return results;
+}
+
 export function getAllPosts() {
-    // Create directory if it doesn't exist (safety check)
     if (!fs.existsSync(postsDirectory)) {
         return [];
     }
 
-    const fileNames = fs.readdirSync(postsDirectory);
-    const allPostsData = fileNames.map((fileName) => {
-        // Remove ".md" from file name to get id
+    const filePaths = getFilesRecursively(postsDirectory);
+    const allPostsData = filePaths.map((filePath) => {
+        const fileName = path.basename(filePath);
         const slug = fileName.replace(/\.md$/, '');
-
-        // Read markdown file as string
-        const fullPath = path.join(postsDirectory, fileName);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-
-        // Use gray-matter to parse the post metadata section
+        const fileContents = fs.readFileSync(filePath, 'utf8');
         const matterResult = matter(fileContents);
 
-        // Combine the data with the id
         return {
             slug,
             ...matterResult.data,
         };
     });
 
-    // Sort posts by date
     return allPostsData.sort((a, b) => {
         if (a.date < b.date) {
             return 1;
@@ -45,8 +54,9 @@ export function getAllPostSlugs() {
     if (!fs.existsSync(postsDirectory)) {
         return [];
     }
-    const fileNames = fs.readdirSync(postsDirectory);
-    return fileNames.map((fileName) => {
+    const filePaths = getFilesRecursively(postsDirectory);
+    return filePaths.map((filePath) => {
+        const fileName = path.basename(filePath);
         return {
             params: {
                 slug: fileName.replace(/\.md$/, ''),
@@ -56,27 +66,36 @@ export function getAllPostSlugs() {
 }
 
 export async function getPostBySlug(slug) {
-    const fullPath = path.join(postsDirectory, `${slug}.md`);
-
-    if (!fs.existsSync(fullPath)) {
+    if (!fs.existsSync(postsDirectory)) {
         return null;
     }
 
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const filePaths = getFilesRecursively(postsDirectory);
+    const filePath = filePaths.find(path => path.endsWith(`${slug}.md`));
 
-    // Use gray-matter to parse the post metadata section
+    if (!filePath) {
+        return null;
+    }
+
+    const fileContents = fs.readFileSync(filePath, 'utf8');
     const matterResult = matter(fileContents);
 
-    // Use remark to convert markdown into HTML string
     const processedContent = await remark()
         .use(html)
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
-    // Combine the data with the id and contentHtml
     return {
         slug,
         contentHtml,
         ...matterResult.data,
     };
+}
+
+export function getRelatedPosts(currentSlug, category, limit = 3) {
+    const allPosts = getAllPosts();
+
+    return allPosts
+        .filter(post => post.category === category && post.slug !== currentSlug)
+        .slice(0, limit);
 }

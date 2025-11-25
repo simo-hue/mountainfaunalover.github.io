@@ -1,13 +1,13 @@
 "use client";
 
-import { Mountain, Camera, Tent, Bike } from "lucide-react";
+import { Mountain, Camera, Tent, Car } from "lucide-react";
 import styles from "./PartnersSection.module.css";
 
 const PARTNERS = [
-    { id: 1, name: "Alpine Gear", icon: <Mountain size={32} /> },
-    { id: 2, name: "Optics Pro", icon: <Camera size={32} /> },
-    { id: 3, name: "Wild Camp", icon: <Tent size={32} /> },
-    { id: 4, name: "E-Bike Trentino", icon: <Bike size={32} /> },
+    { id: 1, name: "Attrezzatura Da Montagna", icon: <Mountain size={32} /> },
+    { id: 2, name: "Attrezzatura Tech", icon: <Camera size={32} /> },
+    { id: 3, name: "Esperienze", icon: <Tent size={32} /> },
+    { id: 4, name: "Test Mezzi Off-Road", icon: <Car size={32} /> },
 ];
 
 export default function PartnersSection() {

@@ -1,10 +1,11 @@
 import ReadingProgress from "@/components/ReadingProgress";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
+import { getAllPostSlugs, getPostBySlug, getRelatedPosts } from "@/lib/posts";
 import styles from "./page.module.css";
 
 export async function generateStaticParams() {
@@ -29,6 +30,7 @@ export default async function BlogPost({ params }) {
         notFound();
     }
 
+    const relatedPosts = getRelatedPosts(post.slug, post.category);
     const readTime = calculateReadTime(post.contentHtml);
     const shareUrl = `https://mountainfaunalover.com/blog/${post.slug}`;
     const shareText = encodeURIComponent(post.title);
@@ -109,6 +111,7 @@ export default async function BlogPost({ params }) {
             />
 
             <ShareButtons title={post.title} slug={post.slug} />
+            <RelatedPosts posts={relatedPosts} />
         </article>
     );
 }
