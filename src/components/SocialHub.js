@@ -10,9 +10,9 @@ const SOCIAL_CONTENT = [
     {
         id: 1,
         platform: "youtube",
-        title: "Il BRAMITO potente del cervo maschio",
+        title: "Un video da non credere...",
         image: "https://img.youtube.com/vi/yH9cArzx4n8/maxresdefault.jpg",
-        views: "Un video da non credere...",
+        views: "",
         link: "https://youtu.be/yH9cArzx4n8"
     },
     {
@@ -50,10 +50,34 @@ const SOCIAL_CONTENT = [
     {
         id: 6,
         platform: "youtube",
-        title: "Alla scoperta del Parco Nazionale",
-        image: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg", // Placeholder ID, replace with real one if available
-        views: "Esplorazione natura",
-        link: "https://www.youtube.com/@MountainFaunaLover"
+        title: "Un VLOG Memorabile",
+        image: "https://img.youtube.com/vi/NTn-3vffEWs/maxresdefault.jpg",
+        views: "",
+        link: "https://youtu.be/NTn-3vffEWs"
+    },
+    {
+        id: 7,
+        platform: "youtube",
+        title: "Cuccioli di Camoscio",
+        image: "https://img.youtube.com/vi/I8d7ITwH2j4/hqdefault.jpg",
+        views: "",
+        link: "https://youtu.be/I8d7ITwH2j4"
+    },
+    {
+        id: 8,
+        platform: "youtube",
+        title: "Incontro Raro",
+        image: "https://img.youtube.com/vi/pepahr0rSNo/maxresdefault.jpg",
+        views: "",
+        link: "https://youtu.be/pepahr0rSNo"
+    },
+    {
+        id: 9,
+        platform: "youtube",
+        title: "Più di 30 cervi maschi",
+        image: "https://img.youtube.com/vi/_6eNn7T9234/maxresdefault.jpg",
+        views: "",
+        link: "https://youtu.be/_6eNn7T9234"
     }
 ];
 
