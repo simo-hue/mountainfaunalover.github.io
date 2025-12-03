@@ -73,7 +73,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: "google-site-verification-code", // Placeholder
+    google: "XbIi-BL2Nv1AUYhLmcFjzKTPuyQnxbLXuHDa7x_TKNc",
   },
 };
 
