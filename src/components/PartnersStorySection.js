@@ -24,13 +24,11 @@ export default function PartnersStorySection() {
                             ma un compagno di viaggio fidato.
                         </p>
                         <p>
-                            Scelgo di lavorare solo con aziende che condividono il mio stesso <span className={styles.highlight}>rispetto per la natura</span> e
-                            la mia ossessione per la qualità. Prodotti che uso personalmente, che ho testato sul campo in condizioni estreme
-                            e che non mi hanno mai tradito.
+                            Scelgo di lavorare solo con aziende che condividono la mia stessa <span className={styles.highlight}>serietà e valori</span>. Un esempio concreto è OLLIN: sono stato loro cliente ben prima di diventarne partner. Dopo aver acquistato e testato personalmente svariati prodotti, sono rimasto colpito dalla loro qualità e ho deciso di avviare questa collaborazione. I numerosi messaggi di apprezzamento che ricevo da voi mi confermano che è stata la scelta giusta.
                         </p>
                         <p>
                             Quando vi consiglio un binocolo o un'attrezzatura, lo faccio perché so che farà la differenza
-                            nella vostra esperienza, proprio come l'ha fatta nella mia.
+                            nella vostra esperienza, proprio come l'ha fatta nella mia. Non aspettatevi mai la classica "marchetta" commerciale: vi consiglierò sempre e solo ciò in cui credo veramente. Questa è una promessa che non tradirò mai.
                         </p>
                     </div>
 
