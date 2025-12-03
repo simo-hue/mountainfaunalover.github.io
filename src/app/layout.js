@@ -17,7 +17,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://mountainfaunalover.com"),
+  metadataBase: new URL("https://mountainfaunalover.github.io"),
   title: {
     default: "Mountain & Fauna Lover | Avvistamenti Cervi e Fauna in Trentino",
     template: "%s | Mountain & Fauna Lover",

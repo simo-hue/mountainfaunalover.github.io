@@ -1,7 +1,7 @@
 import { posts } from "@/data/posts";
 
 export default function sitemap() {
-    const baseUrl = "https://mountainfaunalover.com"; // Replace with actual domain when live
+    const baseUrl = "https://mountainfaunalover.github.io"; // Replace with actual domain when live
 
     // Static routes
     const routes = [

@@ -31,10 +31,10 @@ export default function Footer() {
                     <a href="https://www.youtube.com/@mountainfaunalover" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="YouTube">
                         <Youtube size={20} />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Instagram">
+                    <a href="https://instagram.com/mountainfaunalover" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Instagram">
                         <Instagram size={20} />
                     </a>
-                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="TikTok">
+                    <a href="https://www.tiktok.com/@mountainfaunalover" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="TikTok">
                         <Video size={20} />
                     </a>
                 </div>

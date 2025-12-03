@@ -37,7 +37,7 @@ const SOCIAL_CONTENT = [
         title: "Incontri ravvicinati in Val di Rabbi",
         image: "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&q=80", // Placeholder
         views: "Seguici su Instagram",
-        link: "https://www.instagram.com/mountain_fauna_lover/"
+        link: "https://instagram.com/mountainfaunalover"
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ const SOCIAL_CONTENT = [
         title: "Momenti magici con la fauna alpina",
         image: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=800&q=80", // Placeholder
         views: "Seguici su TikTok",
-        link: "https://www.tiktok.com/@mountain_fauna_lover"
+        link: "https://www.tiktok.com/@mountainfaunalover"
     },
     {
         id: 6,

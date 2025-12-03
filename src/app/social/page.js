@@ -43,21 +43,21 @@ export default async function SocialPage() {
             <section className={styles.section}>
                 <h2 className={styles.sectionTitle}>Seguimi sui Social</h2>
                 <div className={styles.grid}>
-                    <a href="https://www.youtube.com/@MountainFaunaLover" target="_blank" rel="noopener noreferrer" className={styles.card}>
+                    <a href="https://www.youtube.com/@mountainfaunalover" target="_blank" rel="noopener noreferrer" className={styles.card}>
                         <Youtube size={32} className={styles.cardIcon} />
                         <h3 className={styles.cardTitle}>YouTube</h3>
                         <p className={styles.cardText}>
                             Documentari, test attrezzatura e avventure lunghe. Iscriviti per non perdere i nuovi video!
                         </p>
                     </a>
-                    <a href="https://www.instagram.com/mountain_fauna_lover/" target="_blank" rel="noopener noreferrer" className={styles.card}>
+                    <a href="https://instagram.com/mountainfaunalover" target="_blank" rel="noopener noreferrer" className={styles.card}>
                         <Instagram size={32} className={styles.cardIcon} />
                         <h3 className={styles.cardTitle}>Instagram</h3>
                         <p className={styles.cardText}>
                             Foto spettacolari, storie giornaliere e dietro le quinte delle mie uscite.
                         </p>
                     </a>
-                    <a href="https://www.tiktok.com/@mountain_fauna_lover" target="_blank" rel="noopener noreferrer" className={styles.card}>
+                    <a href="https://www.tiktok.com/@mountainfaunalover" target="_blank" rel="noopener noreferrer" className={styles.card}>
                         <Video size={32} className={styles.cardIcon} />
                         <h3 className={styles.cardTitle}>TikTok</h3>
                         <p className={styles.cardText}>
