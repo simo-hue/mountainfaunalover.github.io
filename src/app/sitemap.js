@@ -1,5 +1,7 @@
 import { posts } from "@/data/posts";
 
+export const dynamic = 'force-static';
+
 export default function sitemap() {
     const baseUrl = "https://mountainfaunalover.github.io"; // Replace with actual domain when live
 
