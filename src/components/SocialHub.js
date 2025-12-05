@@ -56,11 +56,27 @@ const SOCIAL_CONTENT = [
         link: "https://instagram.com/mountainfaunalover"
     },
     {
+        id: 12,
+        platform: "tiktok",
+        title: "POV Dall'E-Bike",
+        image: "/images/blog/ebik.JPG",
+        views: "",
+        link: "https://instagram.com/mountainfaunalover"
+    },
+    {
         id: 5,
         platform: "tiktok",
-        title: "Momenti magici con la fauna alpina",
-        image: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=800&q=80", // Placeholder
-        views: "Seguici su TikTok",
+        title: "La pennichella In Alta Quota",
+        image: "/images/blog/relax.JPG",
+        views: "",
+        link: "https://www.tiktok.com/@mountainfaunalover"
+    },
+    {
+        id: 13,
+        platform: "tiktok",
+        title: "Digiscoping con l'iPhone",
+        image: "/images/blog/bk.JPG",
+        views: "",
         link: "https://www.tiktok.com/@mountainfaunalover"
     },
     {
