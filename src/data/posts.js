@@ -40,7 +40,7 @@ export const posts = [
         title: "Nel campo militare con i Defender...",
         excerpt: "Test come si deve per il Land Rover Defender 90 HSE.",
         date: "2024-01-15",
-        image: "/hero-bg.png",
+        image: "https://img.youtube.com/vi/wQrx2422wD8/maxresdefault.jpg",
         category: "Offroad",
         content: "Serve ancora tecnica e il mezzo giusto per andare in fuoristrada?"
     },

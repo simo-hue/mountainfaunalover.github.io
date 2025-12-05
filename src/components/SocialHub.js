@@ -112,7 +112,7 @@ export default function SocialHub() {
             "name": item.title,
             "description": item.views || item.title,
             "thumbnailUrl": [item.image],
-            "uploadDate": new Date().toISOString(), // Fallback as we don't have real date
+            "uploadDate": "2024-01-01T00:00:00.000Z", // Static date to avoid hydration mismatch
             "contentUrl": item.link,
             "embedUrl": item.link.replace("youtu.be/", "www.youtube.com/embed/")
         }));
