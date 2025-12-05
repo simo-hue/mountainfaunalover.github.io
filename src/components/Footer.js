@@ -22,10 +22,10 @@ export default function Footer() {
                         </div>
                         <span className={styles.brandName}>Mountain & Fauna Lover</span>
                         <p className={styles.tagline}>Esplorando la natura selvaggia, un passo alla volta.</p>
-                        <div style={{ marginTop: '1rem' }}>
-                            <Link href="/avvistamenti-fauna-val-di-rabbi" style={{ color: '#38bdf8', fontSize: '0.9rem', textDecoration: 'none' }}>
-                                🦌 Avvistamenti Fauna Val di Rabbi
-                            </Link>
+                        <div className={styles.legalLinksInline}>
+                            <Link href="/privacy-policy">Privacy Policy</Link>
+                            <span className={styles.separator}>•</span>
+                            <Link href="/cookie-policy">Cookie Policy</Link>
                         </div>
                     </div>
 
@@ -46,10 +46,6 @@ export default function Footer() {
             </div>
 
             <div className={styles.container}>
-                <div className={styles.legalLinks} style={{ marginBottom: '1rem', fontSize: '0.9rem' }}>
-                    <Link href="/privacy-policy" style={{ color: '#94a3b8', marginRight: '1rem', textDecoration: 'none' }}>Privacy Policy</Link>
-                    <Link href="/cookie-policy" style={{ color: '#94a3b8', textDecoration: 'none' }}>Cookie Policy</Link>
-                </div>
                 <p className={styles.copyright}>
                     &copy; {currentYear} Mountain & Fauna Lover. Tutti i diritti riservati.
                 </p>

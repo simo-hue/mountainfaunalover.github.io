@@ -5,7 +5,7 @@ export const posts = [
         excerpt: "Ho passato tre notti in tenda per catturare questo momento magico. Il re della foresta si è fatto sentire.",
         date: "2024-10-15",
         image: "/images/home/background.jpg",
-        category: "Fauna",
+        category: "Avvistamenti",
         content: "Il bramito del cervo è uno degli spettacoli più affascinanti della natura alpina. In questo articolo vi racconto la mia esperienza..."
     },
     {
@@ -23,7 +23,7 @@ export const posts = [
         excerpt: "Ollin, l'azienda americana che sta rivoluzionando un intero settore",
         date: "2024-09-10",
         image: "/images/blog/prima_patner/ollin.webp",
-        category: "Tech & Gear",
+        category: "Attrezzatura",
         content: "Per fotografare gli animali in montagna serve pazienza, ma anche l'attrezzatura giusta..."
     },
     {
@@ -32,7 +32,7 @@ export const posts = [
         excerpt: "Swarovski Optik NL PURE 14x52",
         date: "2024-09-10",
         image: "/images/blog/prima_patner/ollin.webp",
-        category: "Tech & Gear",
+        category: "Attrezzatura",
         content: "Per fotografare gli animali in montagna serve pazienza, ma anche l'attrezzatura giusta..."
     },
     {
@@ -41,7 +41,7 @@ export const posts = [
         excerpt: "Test come si deve per il Land Rover Defender 90 HSE.",
         date: "2024-01-15",
         image: "https://img.youtube.com/vi/wQrx2422wD8/maxresdefault.jpg",
-        category: "Offroad",
+        category: "Off-Road",
         content: "Serve ancora tecnica e il mezzo giusto per andare in fuoristrada?"
     },
     {
@@ -50,7 +50,7 @@ export const posts = [
         excerpt: "Guida pratica per catturare la Via Lattea sopra le cime delle Dolomiti. Impostazioni, pianificazione e location.",
         date: "Prossimamente",
         image: "/images/home/background.jpg",
-        category: "Tech & Gear",
+        category: "Attrezzatura",
         content: "",
         comingSoon: true
     },
@@ -60,7 +60,7 @@ export const posts = [
         excerpt: "Un'analisi approfondita e rispettosa sulla convivenza con i grandi carnivori nelle nostre valli.",
         date: "Prossimamente",
         image: "/images/home/background.jpg",
-        category: "Fauna",
+        category: "Avvistamenti",
         content: "",
         comingSoon: true
     }

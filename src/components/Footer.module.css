@@ -48,6 +48,29 @@
     display: none;
 }
 
+.legalLinksInline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.legalLinksInline a {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legalLinksInline a:hover {
+    color: var(--color-accent-green);
+}
+
+.separator {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+}
+
 
 
 .socials {
@@ -102,6 +125,13 @@
 
     .tagline {
         display: block;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .legalLinksInline {
+        margin-top: 0;
         margin-left: 1rem;
         padding-left: 1rem;
         border-left: 1px solid rgba(255, 255, 255, 0.1);

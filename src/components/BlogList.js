@@ -7,7 +7,7 @@ import { ArrowRight, Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./BlogList.module.css";
 
-const CATEGORIES = ["Tutti", "Fauna", "Trekking", "Tech & Gear", "Offroad"];
+const CATEGORIES = ["Tutti", "Avvistamenti", "Trekking", "E-Bike", "Attrezzatura", "Off-Road"];
 
 export default function BlogList({ initialPosts }) {
     const [activeCategory, setActiveCategory] = useState("Tutti");
