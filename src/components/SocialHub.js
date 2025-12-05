@@ -34,9 +34,25 @@ const SOCIAL_CONTENT = [
     {
         id: 4,
         platform: "instagram",
-        title: "Incontri ravvicinati in Val di Rabbi",
-        image: "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&q=80", // Placeholder
-        views: "Seguici su Instagram",
+        title: "Tramonto in Vetta: Val di Rabbi",
+        image: "/images/blog/tramonto.JPG",
+        views: "",
+        link: "https://instagram.com/mountainfaunalover"
+    },
+    {
+        id: 10,
+        platform: "instagram",
+        title: "Backstage Dei Video",
+        image: "/images/blog/off-road_octa/octa2.JPG",
+        views: "",
+        link: "https://instagram.com/mountainfaunalover"
+    },
+    {
+        id: 11,
+        platform: "instagram",
+        title: "Segreti Per Le Riprese Perfette",
+        image: "/images/blog/riprese all'alba.JPG",
+        views: "",
         link: "https://instagram.com/mountainfaunalover"
     },
     {
