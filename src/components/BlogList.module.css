@@ -189,3 +189,43 @@
     gap: 0.75rem;
     color: var(--color-accent-green);
 }
+
+.comingSoonOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+}
+
+.comingSoonBadge {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-family: var(--font-outfit);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.comingSoonCard {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.comingSoonCard:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.comingSoonCard .image {
+    filter: grayscale(100%);
+}

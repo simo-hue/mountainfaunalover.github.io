@@ -43,5 +43,25 @@ export const posts = [
         image: "/hero-bg.png",
         category: "Offroad",
         content: "Serve ancora tecnica e il mezzo giusto per andare in fuoristrada?"
+    },
+    {
+        slug: "fotografia-notturna-dolomiti",
+        title: "I segreti della fotografia notturna",
+        excerpt: "Guida pratica per catturare la Via Lattea sopra le cime delle Dolomiti. Impostazioni, pianificazione e location.",
+        date: "Prossimamente",
+        image: "/images/home/background.jpg",
+        category: "Tech & Gear",
+        content: "",
+        comingSoon: true
+    },
+    {
+        slug: "orso-bruno-trentino",
+        title: "Sulle tracce dell'Orso Bruno",
+        excerpt: "Un'analisi approfondita e rispettosa sulla convivenza con i grandi carnivori nelle nostre valli.",
+        date: "Prossimamente",
+        image: "/images/home/background.jpg",
+        category: "Fauna",
+        content: "",
+        comingSoon: true
     }
 ];

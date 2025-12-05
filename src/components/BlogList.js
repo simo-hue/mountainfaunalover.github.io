@@ -68,27 +68,54 @@ export default function BlogList({ initialPosts }) {
                             exit={{ opacity: 0, scale: 0.9 }}
                             transition={{ duration: 0.3 }}
                         >
-                            <Link href={`/blog/${post.slug}`} className={styles.card}>
-                                <div className={styles.imageContainer}>
-                                    <Image
-                                        src={post.image}
-                                        alt={post.title}
-                                        fill
-                                        className={styles.image}
-                                    />
-                                </div>
-                                <div className={styles.content}>
-                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-                                        <span className={styles.date}>{post.date}</span>
-                                        <span style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase' }}>{post.category}</span>
+                            {post.comingSoon ? (
+                                <div className={`${styles.card} ${styles.comingSoonCard}`}>
+                                    <div className={styles.imageContainer}>
+                                        <div className={styles.comingSoonOverlay}>
+                                            <span className={styles.comingSoonBadge}>Coming Soon</span>
+                                        </div>
+                                        <Image
+                                            src={post.image}
+                                            alt={post.title}
+                                            fill
+                                            className={styles.image}
+                                        />
                                     </div>
-                                    <h2 className={styles.cardTitle}>{post.title}</h2>
-                                    <p className={styles.excerpt}>{post.excerpt}</p>
-                                    <span className={styles.readMore}>
-                                        Leggi l'articolo <ArrowRight size={16} />
-                                    </span>
+                                    <div className={styles.content}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                                            <span className={styles.date}>{post.date}</span>
+                                            <span style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase' }}>{post.category}</span>
+                                        </div>
+                                        <h2 className={styles.cardTitle}>{post.title}</h2>
+                                        <p className={styles.excerpt}>{post.excerpt}</p>
+                                        <span className={styles.readMore} style={{ opacity: 0.5 }}>
+                                            In Scrittura...
+                                        </span>
+                                    </div>
                                 </div>
-                            </Link>
+                            ) : (
+                                <Link href={`/blog/${post.slug}`} className={styles.card}>
+                                    <div className={styles.imageContainer}>
+                                        <Image
+                                            src={post.image}
+                                            alt={post.title}
+                                            fill
+                                            className={styles.image}
+                                        />
+                                    </div>
+                                    <div className={styles.content}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                                            <span className={styles.date}>{post.date}</span>
+                                            <span style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase' }}>{post.category}</span>
+                                        </div>
+                                        <h2 className={styles.cardTitle}>{post.title}</h2>
+                                        <p className={styles.excerpt}>{post.excerpt}</p>
+                                        <span className={styles.readMore}>
+                                            Leggi l'articolo <ArrowRight size={16} />
+                                        </span>
+                                    </div>
+                                </Link>
+                            )}
                         </motion.div>
                     ))}
                 </AnimatePresence>
