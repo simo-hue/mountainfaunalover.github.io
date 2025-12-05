@@ -35,7 +35,7 @@ const SOCIAL_CONTENT = [
         id: 4,
         platform: "instagram",
         title: "Tramonto in Vetta: Val di Rabbi",
-        image: "/images/blog/tramonto.JPG",
+        image: "/le-mie-avventure/tramonto.JPG",
         views: "",
         link: "https://instagram.com/mountainfaunalover"
     },
@@ -43,7 +43,7 @@ const SOCIAL_CONTENT = [
         id: 10,
         platform: "instagram",
         title: "Backstage Dei Video",
-        image: "/images/blog/off-road_octa/octa2.JPG",
+        image: "/le-mie-avventure/off-road_octa/octa2.JPG",
         views: "",
         link: "https://instagram.com/mountainfaunalover"
     },
@@ -51,7 +51,7 @@ const SOCIAL_CONTENT = [
         id: 11,
         platform: "instagram",
         title: "Segreti Per Le Riprese Perfette",
-        image: "/images/blog/riprese all'alba.JPG",
+        image: "/le-mie-avventure/riprese_all_alba.JPG",
         views: "",
         link: "https://instagram.com/mountainfaunalover"
     },
@@ -59,7 +59,7 @@ const SOCIAL_CONTENT = [
         id: 12,
         platform: "tiktok",
         title: "POV Dall'E-Bike",
-        image: "/images/blog/ebik.JPG",
+        image: "/le-mie-avventure/ebike.JPG",
         views: "",
         link: "https://instagram.com/mountainfaunalover"
     },
@@ -67,7 +67,7 @@ const SOCIAL_CONTENT = [
         id: 5,
         platform: "tiktok",
         title: "La pennichella In Alta Quota",
-        image: "/images/blog/relax.JPG",
+        image: "/le-mie-avventure/relax.JPG",
         views: "",
         link: "https://www.tiktok.com/@mountainfaunalover"
     },
@@ -75,7 +75,7 @@ const SOCIAL_CONTENT = [
         id: 13,
         platform: "tiktok",
         title: "Digiscoping con l'iPhone",
-        image: "/images/blog/bk.JPG",
+        image: "/le-mie-avventure/digiscoping.JPG",
         views: "",
         link: "https://www.tiktok.com/@mountainfaunalover"
     },
